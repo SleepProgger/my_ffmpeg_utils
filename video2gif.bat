@@ -3,7 +3,7 @@
 REM For general infos see http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
 REM Set the path here if your ffmpeg executable is somewhere else as in the current directory
 SET ffmpeg_path=ffmpeg.exe
-SET palette=palette.png
+SET palette=%TMP%\palette.png
 SET subtitlefile=subtitle.ass
 
 if not exist "%ffmpeg_path%" echo "Can't find ffmpeg.exe" & goto done
